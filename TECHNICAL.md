@@ -1,11 +1,13 @@
 
   THE ARCHITECTURE and WORKFLOW:
 
+  Python based application which interact with study files and LLM.
+
   ┌─────────────────────────────────────────────┐
   │         INTELLIGENT PARSING LAYER           │
   ├─────────────────────────────────────────────┤
-  │ • DVS Parser (clinical specifications)      │
-  │ • ALS Parser (study metadata XML)           │
+  │ • Editcheck Spec Parser (clinical specifications)      │
+  │ • Rave ALS Parser (study metadata XML)           │
   │ • Requirement Extractor (business logic)    │
   │ • Relationship Mapper (cross-form links)    │
   └─────────────┬───────────────────────────────┘
