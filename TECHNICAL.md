@@ -1,5 +1,5 @@
 
-  🏗️ THE ARCHITECTURE:
+  THE ARCHITECTURE and WORKFLOW:
 
   ┌─────────────────────────────────────────────┐
   │         INTELLIGENT PARSING LAYER           │
@@ -22,9 +22,9 @@
   ┌─────────────────────────────────────────────┐
   │      STRUCTURED PROMPT GENERATION           │
   ├─────────────────────────────────────────────┤
-  │ • Template engine (6-section format)        │
-  │ • Knowledge injection (600+ page docs)      │
-  │ • Example selection (from 273 production)   │
+  │ • Template engine      
+  │ • Knowledge injection     
+  │ • Example selection   
   │ • Context optimization (token efficiency)   │
   └─────────────┬───────────────────────────────┘
                 ↓
@@ -55,23 +55,3 @@
   │ • Deployment file creator (quick edits)     │
   │ • Validation report builder                 │
   └─────────────────────────────────────────────┘
-
-  ⚙️ TECHNICAL STACK:
-
-  Core: Python 3.11+
-  Parsing: lxml, regex, custom parsers
-  LLM: Claude Code API (Opus model)
-  Validation: Python AST, custom rule engine
-  Templates: Jinja2 with custom extensions
-  Caching: In-memory + file-based
-  Logging: Structured logging with context
-
-  📊 PERFORMANCE BENCHMARKS:
-
-  Single Function Generation:
-  ├─ Document parsing: ~5s
-  ├─ Metadata extraction: ~2s
-  ├─ Prompt generation: ~2s
-  ├─ LLM inference: ~60s
-  ├─ Validation: ~3s
-  └─ Total: ~90s (vs 8-12 hours manual)
